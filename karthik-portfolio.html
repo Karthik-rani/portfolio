@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthik Prakash | Portfolio</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --accent: #38bdf8;
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --border: #334155;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        
+        header { text-align: center; margin-bottom: 50px; }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; color: var(--accent); }
+        .contact { color: var(--text-dim); font-size: 0.9rem; }
+
+        section { margin-bottom: 40px; }
+        h2 { border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px; margin-bottom: 20px; }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover { border-color: var(--accent); }
+
+        .badge {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            margin-right: 5px;
+            border: 1px solid var(--accent);
+        }
+
+        .github-link { color: var(--accent); text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>KARTHIK PRAKASH</h1>
+        <div class="contact">
+            Puducherry, India | +91 94864 88129 | karthikprakash002@gmail.com
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Experience</h2>
+        <div class="card">
+            <h3>iotReady Technology Solutions, Bangalore</h3>
+            <p><strong>R&D Engineer</strong> (Aug 2025 - Present)</p>
+            <p>Developing peripheral drivers in the <strong>Toit</strong> programming language for modular system hardware.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Latest Development</h2>
+        <div class="card">
+            <h3>Waveshare 3.5" TFT Firmware (ESP32-S3)</h3>
+            <p>Currently cloning a Temperature Monitoring System firmware using <strong>Toit</strong> for ESP32-S3 paired with a 3.5-inch touch module.</p>
+            <ul>
+                <li>Implemented intuitive WiFi configuration via touch interface.</li>
+                <li>Designed modular task management for data collection and alerting.</li>
+                <li>Integrated hardware-specific drivers for SPI-based TFT communication.</li>
+            </ul>
+            <div style="margin-top:10px;">
+                <span class="badge">Toit</span>
+                <span class="badge">ESP32-S3</span>
+                <span class="badge">TFT Touch</span>
+                <span class="badge">R&D</span>
+            </div>
+            <p style="margin-top: 15px;">
+                <a href="https://github.com/Karthik-rani/toit_firmware" class="github-link">View Repository on GitHub →</a>
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Key Competencies</h2>
+        <div class="card">
+            <strong>Languages:</strong> C, Toit, Python (Basics) <br>
+            <strong>Protocols:</strong> I2C, UART, SPI, BLE <br>
+            <strong>Hardware:</strong> ESP32-S3, Waveshare TFT, KBeacon PRO
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="card">
+            <strong>B. Tech (EIE)</strong> - Pondicherry Engineering College (2019-2023) <br>
+            CGPA: 8.94
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
